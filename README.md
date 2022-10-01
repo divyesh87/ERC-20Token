@@ -4,12 +4,14 @@ An ERC-20 token utilizing the Ethereum Goerli testnet
 
 The coin can be bought via the ICO website built using react
 
-## TECH STACK USED 
-                  Truffle,
-                  Solidity,
-                  React,
-                  Node,
-                  Web3.Js
+## TECH STACK USED : 
+ Truffle : For Testing the smart contracts,
+
+Solidity : Writing Smart Contracts,
+
+React : Creating the frontend for the ICO website,                  
+
+Web3.Js : Interacting with smart contracts
 
 The Contract address of the coin is  : 0xF261A4daA2F280CFf2dAEE0bDdE764D9bC021A42
 (Goerli Testnet)
