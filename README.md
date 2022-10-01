@@ -19,7 +19,7 @@ The Contract address of the coin is  : 0xF261A4daA2F280CFf2dAEE0bDdE764D9bC021A4
 The Contract address of the ICO contract is at : 0x10e123B457e9B4a4ca7A5be443E180DF4fd30B78
 
 
-## npm start
+### npm start
 
 Loads the ICO website which interacts with smart contracts using Web3 library 
 
