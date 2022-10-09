@@ -1,4 +1,4 @@
-// Token Contract : 0xF261A4daA2F280CFf2dAEE0bDdE764D9bC021A42
+// Token Contract : 0x5f7eD162b3F905cC4dcd188DBD59FA537A37A3A3
 // Token Sale contract : 0x10e123B457e9B4a4ca7A5be443E180DF4fd30B78
 import React, { useState, useEffect, useRef } from 'react'
 import styles from "../styles/RequestWallet.module.css"
@@ -123,7 +123,7 @@ function Banner() {
                         <br />
                         <br />
 
-                        <span>Contract Adress : 0xF261A4daA2F280CFf2dAEE0bDdE764D9bC021A42</span>
+                        <span>Contract Adress : 0x5f7eD162b3F905cC4dcd188DBD59FA537A37A3A3</span>
 
                     </Modal.Body>
                     <Modal.Footer>
