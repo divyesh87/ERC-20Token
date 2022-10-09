@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/RequestWallet.module.css"
+import styles from "../styles/wrapper.module.css"
 
 function RequestWalletBanner() {
     return (
