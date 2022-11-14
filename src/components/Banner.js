@@ -23,13 +23,28 @@ function Banner() {
         const web3 = new Web3(provider)
 
         tokenSaleContract.current = new web3.eth.Contract(TokenSaleBuild.abi, "0x10e123B457e9B4a4ca7A5be443E180DF4fd30B78")
+
     }, [])
 
+    async function getNetwork() {
+        try {
+            await window.ethereum.request({
+                method: 'wallet_switchEthereumChain',
+                params: [{ chainId: Web3.utils.toHex(5) }],
+            });
+            ;
+
+        } catch (e) {
+            setshowErrorModal(true)
+            setselectedAccount("")
+        }
+    }
 
     async function connectMetaMask() {
         const selectedAccount = await window.ethereum.request({ method: "eth_requestAccounts" })
         setselectedAccount(selectedAccount[0])
         setinputDisabled(false)
+        getNetwork()
     }
 
     function handleChange(e) {
@@ -117,9 +132,9 @@ function Banner() {
                         <br />
                         Step 1 : Open MetaMask wallet , Go to assets
                         <br />
-                        Step 2 : Click Import tokens 
+                        Step 2 : Click Import tokens
                         <br />
-                        Step 3 : Enter the Contract address below and you will see $RVLT tokens in your account 
+                        Step 3 : Enter the Contract address below and you will see $RVLT tokens in your account
                         <br />
                         <br />
 
